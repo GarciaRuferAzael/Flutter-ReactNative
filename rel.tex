@@ -1,0 +1,119 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{booktabs} % per tabelle più professionali
+\usepackage{titlesec} % per formattare titoli
+\usepackage{tocbibind} % per includere l'indice
+\titleformat{\section}{\Large\bfseries}{}{0em}{}
+
+\title{\textbf{Flutter vs React Native}}
+\author{Azael Garcia Rufer}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Introduzione}
+Negli ultimi anni, lo sviluppo di applicazioni mobili si è evoluto grazie a framework cross-platform come \textbf{Flutter} (Google) e \textbf{React Native} (Meta/Facebook). Questi strumenti permettono di creare app per Android e iOS con un’unica codebase, semplificando il processo di sviluppo.
+
+Questa relazione si propone di:
+\begin{itemize}
+    \item Presentare Flutter e React Native, analizzandone vantaggi e svantaggi.
+    \item Confrontarli in termini di performance, architettura e usabilità.
+    \item Fornire indicazioni pratiche su quale scegliere in base alle esigenze del progetto.
+\end{itemize}
+
+\section{Flutter}
+\subsection{Cos’è Flutter?}
+Flutter è un framework open-source sviluppato da \textbf{Google} nel 2017. Utilizza il linguaggio \textbf{Dart} e un proprio motore di rendering chiamato \textbf{Skia}.
+
+\subsection{Caratteristiche principali}
+\begin{itemize}
+    \item \textbf{Rendering Proprio}: Non usa i componenti nativi, ma disegna la UI con il proprio motore grafico.
+    \item \textbf{Hot Reload}: Permette aggiornamenti istantanei senza riavviare l’app.
+    \item \textbf{UI Personalizzabile}: Supporta Material Design (Android) e Cupertino (iOS).
+    \item \textbf{Alta Performance}: Compilazione nativa (AOT - Ahead Of Time).
+\end{itemize}
+
+\subsection{Vantaggi e Svantaggi}
+\textbf{Vantaggi:}
+\begin{itemize}
+    \item Prestazioni elevate e animazioni fluide.
+    \item Interfaccia coerente tra iOS e Android.
+    \item Supporto per Web, Desktop e Mobile.
+\end{itemize}
+\textbf{Svantaggi:}
+\begin{itemize}
+    \item App più pesanti rispetto a React Native.
+    \item Dart meno diffuso rispetto a JavaScript.
+\end{itemize}
+
+\section{React Native}
+\subsection{Cos’è React Native?}
+React Native è un framework sviluppato da \textbf{Meta (Facebook)} nel 2015. Utilizza \textbf{JavaScript} e il framework React per creare app mobili sfruttando componenti nativi.
+
+\subsection{Caratteristiche principali}
+\begin{itemize}
+    \item \textbf{Basato su JavaScript}: Facile da apprendere per chi conosce il web.
+    \item \textbf{Componenti Nativi}: Usa gli elementi della UI propri di iOS e Android.
+    \item \textbf{Hot Reload}: Permette di testare rapidamente le modifiche.
+\end{itemize}
+
+\subsection{Vantaggi e Svantaggi}
+\textbf{Vantaggi:}
+\begin{itemize}
+    \item Ampia community e molte librerie disponibili.
+    \item Facile integrazione con codice nativo.
+    \item JavaScript è molto popolare tra gli sviluppatori.
+\end{itemize}
+\textbf{Svantaggi:}
+\begin{itemize}
+    \item Performance inferiore rispetto a Flutter (a causa del bridge JavaScript-to-Native).
+    \item Problemi di compatibilità tra versioni di iOS e Android.
+\end{itemize}
+
+\section{Confronto Diretto}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{lcc}
+        \toprule
+        \textbf{Caratteristica} & \textbf{Flutter} & \textbf{React Native} \\
+        \midrule
+        Linguaggio & Dart & JavaScript (React) \\
+        Rendering UI & Skia (personalizzato) & Componenti nativi \\
+        Performance & Alta (compilazione AOT) & Buona, ma dipende dal bridge \\
+        Facilità di apprendimento & Media & Facile (JavaScript è popolare) \\
+        Community & In crescita & Più ampia \\
+        Ecosistema & In espansione & Maturo e consolidato \\
+        \bottomrule
+    \end{tabular}
+    \caption{Confronto tra Flutter e React Native}
+\end{table}
+
+\section{Quale Scegliere?}
+\textbf{Usa Flutter se:}
+\begin{itemize}
+    \item Vuoi prestazioni elevate e una UI consistente.
+    \item Hai bisogno di sviluppare anche per Web e Desktop.
+    \item Non hai problemi a imparare Dart.
+\end{itemize}
+
+\textbf{Usa React Native se:}
+\begin{itemize}
+    \item Preferisci lavorare con JavaScript e React.
+    \item Hai bisogno di una community ampia e molte librerie di terze parti.
+    \item Vuoi un’integrazione più semplice con codice nativo.
+\end{itemize}
+
+\section{Conclusione}
+Entrambi i framework sono ottimi strumenti per lo sviluppo mobile. La scelta dipende dalle esigenze del progetto e dalle competenze del team. 
+
+\textbf{Se cerchi performance elevate e UI coerente → scegli Flutter.}
+
+\textbf{Se vuoi flessibilità e facilità di sviluppo con JavaScript → scegli React Native.}
+
+\end{document}
