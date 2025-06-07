@@ -84,31 +84,59 @@ React Native è un framework sviluppato da \textbf{Meta (Facebook)} nel 2015. Ut
         \toprule
         \textbf{Caratteristica} & \textbf{Flutter} & \textbf{React Native} \\
         \midrule
-        Linguaggio & Dart & JavaScript (React) \\
-        Rendering UI & Skia (personalizzato) & Componenti nativi \\
-        Performance & Alta (compilazione AOT) & Buona, ma dipende dal bridge \\
-        Facilità di apprendimento & Media & Facile (JavaScript è popolare) \\
-        Community & In crescita & Più ampia \\
-        Ecosistema & In espansione & Maturo e consolidato \\
+        \textbf{Linguaggio} & Dart & JavaScript (React) \\
+        \textbf{Rendering UI} & Skia (personalizzato) & Componenti nativi \\
+        \textbf{Performance} & Alta (compilazione AOT) & Buona, ma dipende dal bridge \\
+        \textbf{Facilità di apprendimento} & Media & Facile (JavaScript è popolare) \\
+        \textbf{Community} & In crescita & Più ampia \\
+        \textbf{Ecosistema} & In espansione & Maturo e consolidato \\
         \bottomrule
     \end{tabular}
     \caption{Confronto tra Flutter e React Native}
 \end{table}
 
-\section{Quale Scegliere?}
-\textbf{Usa Flutter se:}
+\section{Flutter vs React Native – Qual è il migliore?}
+La scelta tra Flutter e React Native dipende da vari fattori come i requisiti del progetto, le competenze del team di sviluppo e le necessità di performance.
+
+Flutter, che utilizza Dart, offre alte prestazioni ma ha una base di sviluppatori più piccola e un supporto IDE limitato. React Native, che sfrutta JavaScript, ha un supporto comunitario più ampio e uno sviluppo più veloce grazie al linguaggio familiare.
+
+Alla fine, la decisione dovrebbe essere basata sulle necessità specifiche del progetto e sulle preferenze del team di sviluppo.
+
+\subsection{Perché scegliere Flutter}
 \begin{itemize}
-    \item Vuoi prestazioni elevate e una UI consistente.
-    \item Hai bisogno di sviluppare anche per Web e Desktop.
-    \item Non hai problemi a imparare Dart.
+    \item Usa il linguaggio Dart, che compila più velocemente di JavaScript, garantendo alte prestazioni.
+    \item Dart ha una diffusione inferiore rispetto a JavaScript, rendendolo meno familiare agli sviluppatori.
+    \item Supporto IDE limitato per Dart a causa della sua minore popolarità.
+    \item Consente uno sviluppo più rapido ma porta a file di dimensioni maggiori.
+    \item Offre funzionalità di test integrate per facilitare i test.
 \end{itemize}
 
-\textbf{Usa React Native se:}
+\subsection{Quando scegliere Flutter}
+Flutter può essere la scelta ideale quando:
 \begin{itemize}
-    \item Preferisci lavorare con JavaScript e React.
-    \item Hai bisogno di una community ampia e molte librerie di terze parti.
-    \item Vuoi un’integrazione più semplice con codice nativo.
+    \item La tua app ha bisogno di design UI altamente personalizzati e perfetti a livello di pixel. Flutter ha un'architettura basata su widget e funziona senza fare affidamento su componenti specifici della piattaforma.
+    \item La tua app ha una grafica pesante e animazioni complesse e richiede alte prestazioni. Flutter può supportare questo tramite il proprio motore di rendering Skia.
+    \item Vuoi che la tua app abbia un aspetto identico su dispositivi Android e iOS, quindi Flutter è la scelta giusta.
 \end{itemize}
+
+\subsection{Perché scegliere React Native}
+\begin{itemize}
+    \item Sfrutta JavaScript, che ha un supporto comunitario più ampio ed è più facile da imparare per gli sviluppatori.
+    \item Prestazioni più lente a causa del bridge JavaScript-to-Native.
+    \item Risparmia tempo per gli sviluppatori grazie all'uso di un linguaggio familiare.
+    \item Richiede framework di test di terze parti come Detox per i test.
+    \item Più ampiamente adottato e supportato da una comunità più grande.
+\end{itemize}
+
+\subsection{Quando usare React Native}
+Conviene utilizzare React Native quando:
+\begin{itemize}
+    \item Vuoi riutilizzare i componenti della tua app desktop o sito web per una mobile app.
+    \item Se il tuo team è più esperto in JavaScript o React, React Native dovrebbe essere la scelta ovvia, poiché utilizza lo stesso linguaggio e gli stessi concetti.
+    \item Se desideri ridurre il consumo di memoria, in particolare sui dispositivi Android, React Native è una buona scelta, poiché il motore Hermes aiuta a ottimizzare l'uso della memoria.
+    \item Quando la tua app dovrà fare un uso frequente di moduli nativi come fotocamera, GPS, ecc., React Native può essere scelto grazie alla sua robusta integrazione con le API native.
+\end{itemize}
+
 
 \section{Conclusione}
 Entrambi i framework sono ottimi strumenti per lo sviluppo mobile. La scelta dipende dalle esigenze del progetto e dalle competenze del team. 
